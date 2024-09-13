@@ -2,7 +2,8 @@
 This repository is designed to track and share my personal resume. It also includes a LaTeX version, which others can use as a template for their own resumes.
 
 ## Links
-- **Template Source**: Inspired by [sb2nov's resume template](https://github.com/sb2nov/resume).
+- **Template Source**: Inspired by [Jake Gutierrez's resume template](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs).
+- **Another greate template**: [Sina Atalay's resume template](https://www.overleaf.com/latex/templates/rendercv-engineeringresumes-theme/shwqvsxdgkjy)
 - **Platform used for writing LaTeX and converting to PDF**: [Overleaf](https://www.overleaf.com/).
 - **Platform used for generating and refining content (e.g., README file)**: [OpenAI's ChatGPT](https://openai.com/chatgpt).
 
