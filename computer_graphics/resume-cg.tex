@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabularx}{\textwidth}[t]{X r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabularx}{\textwidth}{X r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{\textwidth}[t]{X r}
+        \textbf{#1} & #2 \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+% \newcommand{\resumeProjectHeading}[2]{
+%     \item
+%     \begin{tabularx}{\textwidth}[t]{X r}
+%         \small\textbf{#1} & \small#2 \\
+%     \end{tabularx}\vspace{-7pt}
+% }
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yumeng He} \\ \vspace{1pt}
+    \small 213-783-4223 $|$ \href{mailto:heyumeng@usc.edu}{\underline{heyumeng0928@gmail.com}} $|$ 
+    \href{https://www.heyumeng.com} 
+    {\underline{www.heyumeng.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Aug 2024 -- May 2026 (Expected)}
+      {Master of Science in Computer Science}{Los Angeles, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Computer Graphics}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Toronto}{Sep 2019 -- May 2024}
+      {Honours Bachelor of Science degree with High Distinction}{Toronto, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Computer Science and Mathematics double major}
+        \resumeItem{Dean's List Scholar for 4 semesters}
+        \resumeItem{Cumulative GPA: 3.71/4.0, highest Sessional Average: $92.40\%$.}
+        \resumeItem{Relevant Courses: Linear Algebra I, Linear Algebra II, Intro Machine Learning, Intro Artif Intell}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Working Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Developer Intern $|$ \normalfont full-time}{August 2022 – August 2023}
+      {HCL Canada Inc.}{Toronto, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Utilized Jenkins to automate build and deployment processes and updated existing company code to address technical debt, significantly accelerating production releases and reducing human error.}
+        \resumeItem{Built Docker images on both xLinux and pLinux platforms, ensuring consistent and scalable deployments.}
+        \resumeItem{Integrated SonarQube into the development pipeline, documented a step-by-step usage guide, presented findings to cross-functional teams, and resolved 3 critical bugs plus 308 code smells (4 blockers, 41 major, 266 info).}
+        \resumeItem{Developed a shell script to automatically clean up old logs every Sunday at 00:00 EST, preventing clutter and improving system performance.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Relevant Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Ray Tracing} $|$ \normalfont C++}{Fall 2024}
+        \resumeItemListStart
+            \resumeItem{Developed a robust ray tracer in C++ capable of rendering both triangles and spheres using Phong shading, shadow rays, and recursive reflections for mirror-like surfaces.}
+            \resumeItem{Implemented supersampling antialiasing, soft shadows from area lights, and the Möller–Trumbore algorithm for efficient ray–triangle intersections, enhancing visual realism and performance.}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Simulating a Roller Coaster} $|$ \normalfont OpenGL}{Fall 2024}
+        \resumeItemListStart
+            \resumeItem{Implemented a first-person roller coaster simulator in C++ and OpenGL, harnessing Catmull-Rom splines for realistic track geometry and smooth camera orientation.}
+            \resumeItem{Created multi-shader pipelines (texture mapping for ground, Phong shading for rails) with per-pixel lighting to achieve immersive, real-time visual effects.}
+            \resumeItem{Added user-controlled speed, automated screenshot capture, and custom rail cross-sections for a fully interactive 3D experience.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Height Fields Using Shaders} $|$ \normalfont OpenGL}{Fall 2024}
+        \resumeItemListStart
+            \resumeItem{Built an interactive OpenGL pipeline with vertex and fragment shaders to generate real-time 3D terrain from heightmaps, supporting multiple rendering modes (points, lines, wireframe, smoothed surfaces).}
+            \resumeItem{Integrated dynamic coloring, transformation/zoom controls, and automated screenshots/rotation features for an immersive, high-performance visualization experience.}
+        \resumeItemListEnd
+        
+    % \resumeProjectHeading
+    %     {\textbf{Petpal } $|$ \normalfont full-stack}{Fall 2023}
+    %     \resumeItemListStart
+    %         \resumeItem{Led a four-person team to develop a Python-based adoption platform using Django REST Framework, providing robust API endpoints for animal profiles, user authentication, and shelter–seeker communication.}
+    %         \resumeItem{Created dynamic front-end interfaces with HTML, CSS, and JavaScript to ensure seamless and responsive user experiences across all devices.}
+    %         \resumeItem{Employed MySQL for high-volume data storage and real-time updates, enabling secure and reliable handling of adoption records and user information.}
+    %         \resumeItem{Integrated advanced search filters, personalized user profiles, and smooth navigation to optimize the pet adoption process for both seekers and shelters.}
+    % \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Petpal} $|$ \normalfont Full-Stack}{Fall 2023}
+        \resumeItemListStart
+            \resumeItem{Led a four-person team to build a Python-based adoption platform with Django REST Framework, integrating MySQL for real-time data handling and advanced search filters.}
+            \resumeItem{Implemented a responsive front end (HTML, CSS, JavaScript) and secure authentication to streamline the pet adoption process for seekers and shelters.}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages/Tools}{: Proficient in C++ and Python (with Jupyter), plus JavaScript (HTML/CSS), MySQL, Docker} \\
+     \textbf{Graphics Experience}{: Developed real-time rendering pipelines (OpenGL, shaders) for interactive 3D projects} \\
+     \textbf{Additional}{: Node.js, React, Gradle, Ant, R, Shell scripting} \\
+     \textbf{Communication}{: Fluent in English and Mandarin}
+    }
+    }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
